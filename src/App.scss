@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+}
+button{
+    display: block;
+   margin: 0 auto;
+   margin-bottom: 10px;
+   min-width: 200px;
+   cursor: pointer;
+}
+
+.quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
