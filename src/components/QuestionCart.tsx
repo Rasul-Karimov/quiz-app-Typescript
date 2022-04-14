@@ -16,7 +16,7 @@ const QuestionCart: React.FC<Props> = (props: Props) => {
 
     function handleClick(e: any) {
         if (e.target.value === props.rightAnswer) {
-            e.target.style.background = "blue"
+            e.target.style.background = "green"
             props.setRight(true)
             props.setRightAnswers(number => number + 1)
 
@@ -32,7 +32,7 @@ const QuestionCart: React.FC<Props> = (props: Props) => {
             <h3 className='quiz__question' >{props.question}</h3>
             {
                 props.answers.map(item => (
-                    <button className='quiz__next btn' key={item} disabled={props.right && true} onClick={(e) => handleClick(e)} value={item}>{item}</button>
+                    <button className='quiz__answer' key={item} disabled={props.right && true} onClick={(e) => handleClick(e)} value={item}>{item}</button>
                 ))
             }
         </div>
